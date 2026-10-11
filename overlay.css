@@ -1,0 +1,91 @@
+/* ============================================================
+   Shorts Killer — стили оверлея (мягкий режим)
+   ============================================================ */
+
+#shorts-killer-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(0, 0, 0, 0.92) !important;
+  z-index: 2147483647 !important; /* максимальный z-index */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+}
+
+#shorts-killer-overlay h1 {
+  font-size: 28px !important;
+  margin: 0 0 12px 0 !important;
+  font-weight: 700 !important;
+}
+
+#shorts-killer-overlay p {
+  font-size: 16px !important;
+  opacity: 0.85 !important;
+  margin: 0 0 24px 0 !important;
+  max-width: 420px !important;
+  line-height: 1.5 !important;
+}
+
+#shorts-killer-question {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  max-width: 480px !important;
+  line-height: 1.45 !important;
+  margin: 8px 0 28px 0 !important;
+  padding: 16px 20px !important;
+  background: rgba(255, 77, 77, 0.12) !important;
+  border: 1px solid rgba(255, 77, 77, 0.35) !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+}
+
+#shorts-killer-timer {
+  font-size: 64px !important;
+  font-weight: 800 !important;
+  margin: 16px 0 32px 0 !important;
+  color: #ff4d4d !important;
+  letter-spacing: 2px !important;
+}
+
+#shorts-killer-btn {
+  display: none; /* появляется только после таймера */
+  padding: 14px 28px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  background: #ff4d4d !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: background 0.2s, transform 0.1s !important;
+}
+
+#shorts-killer-btn:hover {
+  background: #e63939 !important;
+  transform: scale(1.03) !important;
+}
+
+#shorts-killer-btn:active {
+  transform: scale(0.98) !important;
+}
+
+#shorts-killer-stats {
+  margin-top: 40px !important;
+  font-size: 14px !important;
+  opacity: 0.6 !important;
+}
+
+
+/* Hide Shorts cards/shelves/navigation across YouTube. */
+[data-shorts-killer-hidden="true"] {
+  display: none !important;
+}

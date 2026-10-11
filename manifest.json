@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Shorts Killer",
+  "version": "0.8.0",
+  "description": "Защита от YouTube Shorts: мягкий и жёсткий режимы, лимиты, скрытие Shorts, локальная статистика и Telegram-отчёты.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://www.youtube.com/*",
+    "*://youtube.com/*",
+    "https://api.telegram.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "overlay.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Shorts Killer"
+  }
+}
