@@ -114,5 +114,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Links
 
-- Repository: _(add your GitHub URL here)_
-- Issues: _(add your GitHub issues URL here)_
+- Repository: [https://github.com/Has7nae/shorts-killer](https://github.com/Has7nae/shorts-killer)
+- Issues: [https://github.com/Has7nae/shorts-killer/issues](https://github.com/Has7nae/shorts-killer/issues)
